@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D950866-33C2-48CE-B54D-83FE65C1C8A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PosphereSV.My.MyApplication</StartupObject>
+    <RootNamespace>PosphereSV</RootNamespace>
+    <AssemblyName>PosphereSV</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PosphereSV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PosphereSV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDB.vb" />
+    <Compile Include="clsHtools.vb" />
+    <Compile Include="frm102POSパターン登録.Designer.vb">
+      <DependentUpon>frm102POSパターン登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm102POSパターン登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm102POSパターン登録第2画面.Designer.vb">
+      <DependentUpon>frm102POSパターン登録第2画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm102POSパターン登録第2画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm103端末情報登録_第2画面.Designer.vb">
+      <DependentUpon>frm103端末情報登録_第2画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm103端末情報登録_第2画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm104グループ登録_第2画面.Designer.vb">
+      <DependentUpon>frm104グループ登録_第2画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm104グループ登録_第2画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm105商品登録_コピー画面.Designer.vb">
+      <DependentUpon>frm105商品登録_コピー画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm105商品登録_コピー画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm105商品登録_検索画面.Designer.vb">
+      <DependentUpon>frm105商品登録_検索画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm105商品登録_検索画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm105商品登録_登録画面.Designer.vb">
+      <DependentUpon>frm105商品登録_登録画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm105商品登録_登録画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm110レジボタン設定_キーボード設定.Designer.vb">
+      <DependentUpon>frm110レジボタン設定_キーボード設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm110レジボタン設定_キーボード設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm111ページコピー.designer.vb">
+      <DependentUpon>Frm111ページコピー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm111ページコピー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm111ページ名称.Designer.vb">
+      <DependentUpon>Frm111ページ名称.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm111ページ名称.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm111レジメニュ設定_Colorサンプル.Designer.vb">
+      <DependentUpon>Frm111レジメニュ設定_Colorサンプル.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm111レジメニュ設定_Colorサンプル.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm118POS更新プログラム配信.Designer.vb">
+      <DependentUpon>frm118POS更新プログラム配信.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm118POS更新プログラム配信.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm117POS背面画像ファイル配信.Designer.vb">
+      <DependentUpon>frm117POS背面画像ファイル配信.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm117POS背面画像ファイル配信.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm109POS電子ジャーナル収集.Designer.vb">
+      <DependentUpon>frm109POS電子ジャーナル収集.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm109POS電子ジャーナル収集.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm104グループ登録.Designer.vb">
+      <DependentUpon>frm104グループ登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm104グループ登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm123各種設定.Designer.vb">
+      <DependentUpon>frm123各種設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm123各種設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm124オーダリング設定データ送信.Designer.vb">
+      <DependentUpon>frm124オーダリング設定データ送信.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm124オーダリング設定データ送信.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm119テーブル配置.Designer.vb">
+      <DependentUpon>frm119テーブル配置.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm119テーブル配置.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm106データベース参照.Designer.vb">
+      <DependentUpon>frm106データベース参照.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm106データベース参照.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm120ハンディターミナル設定.Designer.vb">
+      <DependentUpon>frm120ハンディターミナル設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm120ハンディターミナル設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm121プリンタコントロール設定.Designer.vb">
+      <DependentUpon>frm121プリンタコントロール設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm121プリンタコントロール設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm125エクスポート画面.Designer.vb">
+      <DependentUpon>frm125エクスポート画面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm125エクスポート画面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmベース.Designer.vb">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm101マスタ取込.Designer.vb">
+      <DependentUpon>frm101マスタ取込.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm101マスタ取込.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm011メニュー.Designer.vb">
+      <DependentUpon>frm011メニュー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm011メニュー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm110レジボタン設定.Designer.vb">
+      <DependentUpon>frm110レジボタン設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm110レジボタン設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm112レジボタン設定簡易.Designer.vb">
+      <DependentUpon>frm112レジボタン設定簡易.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm112レジボタン設定簡易.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm111レジメニュー設定.Designer.vb">
+      <DependentUpon>frm111レジメニュー設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm111レジメニュー設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm114POSレジ設定データ配信.Designer.vb">
+      <DependentUpon>frm114POSレジ設定データ配信.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm114POSレジ設定データ配信.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm122伝票フォーマット設定.Designer.vb">
+      <DependentUpon>frm122伝票フォーマット設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm122伝票フォーマット設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm105商品登録.Designer.vb">
+      <DependentUpon>frm105商品登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm105商品登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm004更新プログラム確認.Designer.vb">
+      <DependentUpon>frm004更新プログラム確認.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm004更新プログラム確認.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm103端末情報登録.Designer.vb">
+      <DependentUpon>frm103端末情報登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm103端末情報登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm108電子ジャーナル照会.Designer.vb">
+      <DependentUpon>frm108電子ジャーナル照会.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm108電子ジャーナル照会.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm113レジメニュー設定簡易.Designer.vb">
+      <DependentUpon>frm113レジメニュー設定簡易.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm113レジメニュー設定簡易.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IH_TOOLS.Designer.vb">
+      <DependentUpon>IH_TOOLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IH_TOOLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IroDukeTEST.Designer.vb">
+      <DependentUpon>IroDukeTEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IroDukeTEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdl_Sound.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sfrmパスワード.Designer.vb">
+      <DependentUpon>sfrmパスワード.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmパスワード.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm102POSパターン登録.resx">
+      <DependentUpon>frm102POSパターン登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm102POSパターン登録第2画面.resx">
+      <DependentUpon>frm102POSパターン登録第2画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm103端末情報登録_第2画面.resx">
+      <DependentUpon>frm103端末情報登録_第2画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm104グループ登録_第2画面.resx">
+      <DependentUpon>frm104グループ登録_第2画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm105商品登録_コピー画面.resx">
+      <DependentUpon>frm105商品登録_コピー画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm105商品登録_検索画面.resx">
+      <DependentUpon>frm105商品登録_検索画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm105商品登録_登録画面.resx">
+      <DependentUpon>frm105商品登録_登録画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm110レジボタン設定_キーボード設定.resx">
+      <DependentUpon>frm110レジボタン設定_キーボード設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm111ページコピー.resx">
+      <DependentUpon>Frm111ページコピー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm111ページ名称.resx">
+      <DependentUpon>Frm111ページ名称.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm111レジメニュ設定_Colorサンプル.resx">
+      <DependentUpon>Frm111レジメニュ設定_Colorサンプル.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm118POS更新プログラム配信.resx">
+      <DependentUpon>frm118POS更新プログラム配信.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm117POS背面画像ファイル配信.resx">
+      <DependentUpon>frm117POS背面画像ファイル配信.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm109POS電子ジャーナル収集.resx">
+      <DependentUpon>frm109POS電子ジャーナル収集.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm104グループ登録.resx">
+      <DependentUpon>frm104グループ登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm119テーブル配置.resx">
+      <DependentUpon>frm119テーブル配置.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm106データベース参照.resx">
+      <DependentUpon>frm106データベース参照.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm120ハンディターミナル設定.resx">
+      <DependentUpon>frm120ハンディターミナル設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm121プリンタコントロール設定.resx">
+      <DependentUpon>frm121プリンタコントロール設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm125エクスポート画面.resx">
+      <DependentUpon>frm125エクスポート画面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmベース.resx">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm101マスタ取込.resx">
+      <DependentUpon>frm101マスタ取込.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm011メニュー.resx">
+      <DependentUpon>frm011メニュー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm110レジボタン設定.resx">
+      <DependentUpon>frm110レジボタン設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm112レジボタン設定簡易.resx">
+      <DependentUpon>frm112レジボタン設定簡易.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm111レジメニュー設定.resx">
+      <DependentUpon>frm111レジメニュー設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm114POSレジ設定データ配信.resx">
+      <DependentUpon>frm114POSレジ設定データ配信.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm122伝票フォーマット設定.resx">
+      <DependentUpon>frm122伝票フォーマット設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm105商品登録.resx">
+      <DependentUpon>frm105商品登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm004更新プログラム確認.resx">
+      <DependentUpon>frm004更新プログラム確認.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm103端末情報登録.resx">
+      <DependentUpon>frm103端末情報登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm108電子ジャーナル照会.resx">
+      <DependentUpon>frm108電子ジャーナル照会.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm113レジメニュー設定簡易.resx">
+      <DependentUpon>frm113レジメニュー設定簡易.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IH_TOOLS.resx">
+      <DependentUpon>IH_TOOLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IroDukeTEST.resx">
+      <DependentUpon>IroDukeTEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmパスワード.resx">
+      <DependentUpon>sfrmパスワード.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pos.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
